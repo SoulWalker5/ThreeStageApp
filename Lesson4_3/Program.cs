@@ -14,8 +14,8 @@ namespace DataAccessLayer
             ICarsController carsController = new CarsController();
             IDetailsController detailController = new DetailsController();
 
-            var result = from resCar in carsController.GetСarsViewModels()
-                         join resDet in detailController.GetDetailViewModels()
+            var result = from resCar in carsController.GetСars()
+                         join resDet in detailController.GetDetails()
                          on resCar.Id equals resDet.Cars_Id
                          select new { CarName = resCar.Name, Car_Id = resCar.Id, DetailName = resDet.Name };
             foreach (var obj in result)

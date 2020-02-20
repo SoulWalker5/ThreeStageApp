@@ -1,9 +1,6 @@
 ﻿using BusinessLogicLayer;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PresentationLayer
 {
@@ -11,9 +8,9 @@ namespace PresentationLayer
     {
         ICarsService service = new CarsService();
 
-        public IEnumerable<CarViewModel> GetСarsViewModels()
+        public IEnumerable<CarViewModel> GetСars()
         {
-            var carsViewModel = from car in service.GetCarsModel()
+            var carsViewModel = from car in service.GetCars()
                                  select new CarViewModel() { Id = car.Id, Name = car.Name };
             return carsViewModel;
         }

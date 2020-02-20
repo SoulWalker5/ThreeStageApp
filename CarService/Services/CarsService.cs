@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DataAccessLayer;
 
 namespace BusinessLogicLayer
@@ -11,7 +8,7 @@ namespace BusinessLogicLayer
     {
         ICarsRepository repository = new CarsRepository();
 
-        public IEnumerable<CarModel> GetCarsModel()
+        public IEnumerable<CarModel> GetCars()
         {
             var carsModels = from car in repository.GetCars()
                              select new CarModel() { Id = car.Id, Name = car.Name };

@@ -41,12 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cars\Car.cs" />
-    <Compile Include="Cars\CarsRepository.cs" />
-    <Compile Include="Details\Detail.cs" />
-    <Compile Include="Details\DetailsRepository.cs" />
-    <Compile Include="Cars\ICarsRepository.cs" />
-    <Compile Include="Details\IDetailsRepository.cs" />
+    <Compile Include="Entity\Car.cs" />
+    <Compile Include="Repository\CarsRepository.cs" />
+    <Compile Include="Entity\Detail.cs" />
+    <Compile Include="Repository\DetailsRepository.cs" />
+    <Compile Include="Interface\ICarsRepository.cs" />
+    <Compile Include="Interface\IDetailsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

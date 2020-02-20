@@ -4,6 +4,6 @@ namespace BusinessLogicLayer
 {
     public interface IDetailsService
     {
-        IEnumerable<DetailModel> GetDetailsModel();
+        IEnumerable<DetailModel> GetDetails();
     }
 }
